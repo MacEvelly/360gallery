@@ -1,26 +1,107 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>img360</title>
-    <style>body { margin: 0; }</style>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Racing+Sans+One');
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      body {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(135deg, #97abff 10%, #123597 100%);
+      }
+      div{
+          width: 100%;
+      }
+      h1{
+        font-family: 'Racing Sans One', Tahoma, Sans-Serif;
+    font-size: 340%;
+    text-align: center;
+    margin-bottom: 2vmin;
+    color: #fff;
+    letter-spacing: .1rem;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;     }
+      ul {
+        all: unset;
+        width: 100%;
+        display: grid;
+        gap: 20px;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+      }
+      li {
+        all: unset;
+      }
+      img {
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+        border: 10px solid white;
+      }
+    </style>
   </head>
   <body>
-    <!-- Attachment point for your app -->
-    <div id="container"></div>
-    <script src="./client.bundle.js"></script>
-    <script>
-      // Initialize the React 360 application
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      const imgFolder = urlParams.get('F') || "1"
-      React360.init(
-        'index.bundle.js',
-        document.getElementById('container'),
-        {
-          assetRoot: `${imgFolder}/`,
-        }
-      );
-    </script>
+    <div>
+      <h1>360 Doll Playsets</h1>
+      <ul>
+        <li>
+          <a href="./viewer.html?F=1"
+            ><img src="./1/img360.jpg" alt="360 image 1"
+          /></a>
+        </li>
+        <li>
+          <a href="./viewer.html?F=2"
+            ><img src="./2/img360.jpg" alt="360 image 2"
+          /></a>
+        </li>
+        <li>
+          <a href="./viewer.html?F=3"
+            ><img src="./3/img360.jpg" alt="360 image 3"
+          /></a>
+        </li>
+        <li>
+          <a href="./viewer.html?F=4"
+            ><img src="./4/img360.jpg" alt="360 image 4"
+          /></a>
+        </li>
+        <li>
+          <a href="./viewer.html?F=5"
+            ><img src="./5/img360.jpg" alt="360 image 5"
+          /></a>
+        </li>
+        <li>
+          <a href="./viewer.html?F=6"
+            ><img src="./6/img360.jpg" alt="360 image 6"
+          /></a>
+        </li>
+        <li>
+          <a href="./viewer.html?F=7"
+            ><img src="./7/img360.jpg" alt="360 image 7"
+          /></a>
+        </li>
+        <li>
+          <a href="./viewer.html?F=8"
+            ><img src="./8/img360.jpg" alt="360 image 8"
+          /></a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
-
